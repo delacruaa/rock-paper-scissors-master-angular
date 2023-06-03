@@ -1,7 +1,9 @@
 <div class="container"> 
   <app-header></app-header>
-  <app-rps  [@fadeInOut] *ngIf="!isActive"></app-rps>
-  <app-second-step [@fadeInOut] *ngIf="isActive"></app-second-step>
+  <app-rps  [@fadeInOut] *ngIf="!isActive; else alternativeContent"></app-rps>
+  <ng-template #alternativeContent>
+    <app-second-step ></app-second-step>
+  </ng-template>
   <button *ngIf="!isActive" class="btn" (click)="openModal()">Rules</button>
  
 </div>

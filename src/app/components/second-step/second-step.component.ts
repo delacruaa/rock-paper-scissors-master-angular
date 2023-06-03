@@ -13,12 +13,16 @@ export class SecondStepComponent implements OnInit {
   public win = 0;
   public lose = 0;
   public housePicked = '';
+  public show = false;
   constructor(
     private pickedService: PickedService,
     private scoreService: ScoreService
   ) {}
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.show = true;
+    }, 500);
     this.pickedService.getYourPicked().subscribe((data) => {
       this.type = data;
     });
@@ -50,7 +54,7 @@ export class SecondStepComponent implements OnInit {
         this.lose = this.lose + 1;
         this.scoreService.lose.next(this.lose);
       }
-    }, 1000);
+    }, 2000);
   }
 
   playAgain() {
