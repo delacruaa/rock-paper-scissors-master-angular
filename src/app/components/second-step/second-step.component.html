@@ -1,16 +1,16 @@
-<div *ngIf="show" class="wrapper" >
+<div [@fadeInOut] *ngIf="show" class="wrapper" >
    <div class="picked__wrapper">
-        <div  class="picked">
+        <div   class="picked">
             <p>YOU PICKED</p>
             <p>THE HOUSE PICKED</p>
         </div>
     
-        <div class="picked">
+        <div [@fadeInOut] class="picked">
             <app-picked  [type]="type"></app-picked>
             <app-picked  [type]="randomPicked()"></app-picked>
         </div>
    </div>
-    <button *ngIf="housePicked" class="btn" (click)="playAgain()">
+    <button [@fadeInOut] *ngIf="housePicked" class="btn" (click)="playAgain()">
         PLAY AGAIN
     </button>
 </div>

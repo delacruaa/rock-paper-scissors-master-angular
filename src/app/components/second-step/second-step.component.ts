@@ -1,11 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { PickedService } from 'src/app/services/picked.service';
 import { ScoreService } from 'src/app/services/score.service';
-
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
 @Component({
   selector: 'app-second-step',
   templateUrl: './second-step.component.html',
   styleUrls: ['./second-step.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({ opacity: 0 })),
+      state('*', style({ opacity: 1 })),
+      transition('void <=> *', animate('300ms')),
+    ]),
+  ],
 })
 export class SecondStepComponent implements OnInit {
   public type = '';
