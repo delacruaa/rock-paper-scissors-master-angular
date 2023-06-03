@@ -14,8 +14,8 @@ import {
   styleUrls: ['./app.component.scss'],
   animations: [
     trigger('fadeInOut', [
-      state('void', style({ transform: 'scale(0.5)', opacity: 0 })),
-      state('*', style({ transform: 'scale(1)', opacity: 1 })),
+      state('void', style({ opacity: 0 })),
+      state('*', style({ opacity: 1 })),
       transition('void <=> *', animate('300ms')),
     ]),
   ],
