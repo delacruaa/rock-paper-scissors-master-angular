@@ -1,0 +1,156 @@
+.wrapper {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    
+    .rock {
+        position: absolute;
+        bottom: -50px;
+     
+    }
+    .paper {
+        position: absolute;
+       
+        top: -80px;
+        left: 120px; 
+       
+    }
+    .scissors {
+        position: absolute;
+        top: -80px;
+        right: 120px; 
+        
+    }
+}
+
+@media(max-width:683px)  {
+    .wrapper {
+
+        .rock {
+            position: absolute;
+            bottom: 0px;
+         
+        }
+        .paper {
+            position: absolute;
+           
+            top: -50px;
+            left: 120px; 
+           
+        }
+        .scissors {
+            position: absolute;
+            top: -50px;
+            right: 120px; 
+            
+        }
+    }
+    
+}
+
+
+@media(max-width:577px)  {
+    .wrapper {
+        img {
+            height: 263px;
+            width: 228px;
+        }
+        .rock {
+            position: absolute;
+            bottom: 0px;
+         
+        }
+        .paper {
+            position: absolute;
+           
+            top: -50px;
+            left: 120px; 
+           
+        }
+        .scissors {
+            position: absolute;
+            top: -50px;
+            right: 120px; 
+            
+        }
+    }
+    
+}
+
+
+@media(max-width:538px)  {
+    .wrapper {
+        .rock {
+            position: absolute;
+            bottom: 0px;
+         
+        }
+        .paper {
+            position: absolute;
+           
+            top: -50px;
+            left: 80px; 
+           
+        }
+        .scissors {
+            position: absolute;
+            top: -50px;
+            right: 80px; 
+            
+        }
+    }
+    
+}
+
+@media(max-width:460px)  {
+    .wrapper {
+        .rock {
+            position: absolute;
+            bottom: 0px;
+         
+        }
+        .paper {
+            position: absolute;
+           
+            top: -50px;
+            left: 50px; 
+           
+        }
+        .scissors {
+            position: absolute;
+            top: -50px;
+            right: 50px; 
+            
+        }
+    }
+    
+}
+
+@media(max-width:398px)  {
+    .wrapper {
+        .rock {
+            position: absolute;
+            bottom: 0px;
+         
+        }
+        .paper {
+            position: absolute;
+           
+            top: -50px;
+            left: 0px; 
+           
+        }
+        .scissors {
+            position: absolute;
+            top: -50px;
+            right: 0px; 
+            
+        }
+    }
+    
+}

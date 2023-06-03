@@ -1,0 +1,84 @@
+.wrapper {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .picked__wrapper { 
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        .picked {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            gap: 20px;
+            p {
+                font-size: 32px;
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+   
+    .btn {
+        border: none;
+        cursor: pointer;
+        width: 128px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2.5px;
+        background:transparent;
+        color: #FFFFFF;
+        transition: 0.6s;
+        &:hover {
+            color: #1F3757;
+            transition: 0.6s;
+            background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+            
+        }
+    }
+}
+
+@media(max-width:481px) {
+    .wrapper {
+        position: relative;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .picked__wrapper { 
+            width: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .picked {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                p {
+                    font-size: 20px;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+        }
+        .btn {
+            margin-top: 20px;
+        }
+    }
+} 
