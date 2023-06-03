@@ -32,3 +32,15 @@
         }
     }
 }
+@media(max-width:413px) {
+    .container {
+       
+        .btn {
+            right: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%); 
+            bottom: -100px;
+            
+        }
+    }
+}
